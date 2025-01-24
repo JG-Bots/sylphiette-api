@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<title>Sylphiette - Rest Api's</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="description" content="Lucid Bootstrap 4.1.1 Admin Template">
+<meta name="author" content="WrapTheme, design by: ThemeMakker.com">
+<link rel="icon" href="https://telegra.ph/file/c9cd3b0d4d28680926135.jpg">
+
+<link rel="stylesheet" href="https://www.wrraptheme.com/templates/lucid/html/assets/vendor/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.wrraptheme.com/templates/lucid/html/assets/vendor/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.wrraptheme.com/templates/lucid/html/assets/vendor/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css">
+<link rel="stylesheet" href="https://www.wrraptheme.com/templates/lucid/html/assets/vendor/chartist/css/chartist.min.css">
+<link rel="stylesheet" href="https://www.wrraptheme.com/templates/lucid/html/assets/vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.css">
+<link rel="stylesheet" href="https://www.wrraptheme.com/templates/lucid/html/assets/vendor/toastr/toastr.min.css">
+<link rel="stylesheet" href="https://www.wrraptheme.com/templates/lucid/html/dark/assets/css/main.css">
+<link rel="stylesheet" href="https://www.wrraptheme.com/templates/lucid/html/dark/assets/css/color_skins.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+<style>
+  span{
+    font-family: 'Lobster', cursive;
+  }
+</style>
+
+
+</head>
+<body class="theme-blue">
+
+<script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+
+<div class="page-loader-wrapper">
+<div class="loader">
+<div class="m-t-30"><img src="https://www.wrraptheme.com/templates/lucid/html/assets/images/logo-icon.svg" width="48" height="48" alt="Lucid"></div>
+<p>carregando...</p>
+</div>
+</div>
+
+<div id="wrapper">
+<nav class="navbar navbar-fixed-top">
+<div class="container-fluid">
+<div class="navbar-btn">
+<button type="button" class="btn-toggle-offcanvas"> <span class="iconify" data-icon="dashicons:menu" style="color: white;" data-width="25" data-height="25"></span></button>
+</div>
+<div class="navbar-brand">
+</div>
+<div class="navbar-right">
+
+<div id="navbar-menu">
+<ul class="nav navbar-nav">
+<li>
+<li>
+<a href="#" class="icon-menu"><i class=""></i></a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</nav>
+<div id="left-sidebar" class="sidebar">
+<div class="sidebar-scroll">
+<div class="user-account">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrRj3DfLZ0cfIwYOVjptI52m1nm3fm2IAU6UXJf8HsAQcNMje_k1olID58&s=10" class="rounded user-photo" alt="User Profile Picture">
+<div class="dropdown">
+<span>Seja Bem Vindo(a),</span>
+<a class="user-name"><strong>SYLPHIETTE REST API'S</strong></a>
+</div>
+</div>
+
+<ul class="nav nav-tabs">
+<li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#menu">Menu Api's</a></li>
+<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#setting"><i class="fa fa-cog"></i></a></li>
+<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#question"><i class="fa fa-info-circle"></i></a></li>
+</ul>
+
+<div class="tab-content p-l-0 p-r-0">
+<div class="tab-pane active" id="menu">
+<nav id="left-sidebar-nav" class="sidebar-nav">
+<ul id="main-menu" class="metismenu">
+
+<!-- ///////////////////////////////////// -->
+
+<li>
+<a href="#App" class="has-arrow"> <i class="fa fa-youtube-play"></i> <span>Youtube Play's</span></a>
+<ul>
+
+<li><a href="/api/youtube/playmp3?&q=Tonikaku Kawaii「AMV」 || Power {Tradução-Legendado}&apikey=ale1">YOUTUBE PLAY AUDIO</a> </li></a></li>
+<li><a href="/api/youtube/playmp4?&q=Tonikaku Kawaii「AMV」 || Power {Tradução-Legendado}&apikey=ale1">YOUTUBE PLAY VIDEO</a> </li></a></li>
+<li><a href="/api/youtube/mp3?&link=https://youtu.be/1dg2ks4c4ts?si=bEY8uVQOYppDvj2X&apikey=ale1">YTMP3</a></li>
+<li><a href="/api/youtube/mp4?&link=https://youtu.be/1dg2ks4c4ts?si=bEY8uVQOYppDvj2X&apikey=ale1">YTMP4</a></li>
+<li><a href="/api/youtube/pesquisar?q=pou&apikey=ale1">YOUTUBE SEARCH</a></li>
+</ul>
+</li>
+
+<!-- ///////////////////////////////////// -->
+
+<li>
+<a href="#Tables" class="has-arrow"><i class="fa fa-anchor"></i> <span>Tools</span></a>
+<ul>
+
+<li><a href="/api/others/fazernick?texto=Jerfinhopro&apikey=ale1">FAZERNICK<span class="badge badge-warning float-right">v1</span></a></li>
+<li><a href="/api/others/fazernick2?texto=Jerfinhopro&apikey=ale1">FAZERNICK<span class="badge badge-warning float-right">v2</span></a></li>
+<li><a href="/api/consultas/geradordedados?apikey=KEY-VIP">GERAR-DADOS</a></li>
+
+</ul>
+</li>
+
+<!-- ///////////////////////////////////// -->
+
+</ul>
+</nav>
+</div>
+
+<div class="tab-pane p-l-15 p-r-15" id="setting">
+<h6>Escolha o Tema!</h6>
+<ul class="choose-skin list-unstyled">
+<li data-theme="purple">
+<div class="purple"></div>
+<span>Roxo</span>
+</li>
+<li data-theme="blue" class="active">
+<div class="blue"></div>
+<span>Azul Claro</span>
+</li>
+<li data-theme="cyan">
+<div class="cyan"></div>
+<span>Azul Ciano</span>
+</li>
+<li data-theme="green">
+<div class="green"></div>
+<span>Verde</span>
+</li>
+<li data-theme="orange">
+<div class="orange"></div>
+<span>Laranja</span>
+</li>
+<li data-theme="blush">
+<div class="blush"></div>
+<span>Rosa</span>
+</li>
+</ul>
+<hr>
+</li>
+</ul>
+</div>
+
+<div class="tab-pane p-l-15 p-r-15" id="question">
+<ul class="list-unstyled question">
+
+<li class="menu-heading">Redes Sociais Do Dono</li>
+<li><a href="https://chat.whatsapp.com/DiMy1DlJIMELrPtdhqb3fb">Meu Grupo De Zap</a></li>
+<li><a href="https://youtube.com/@jg-bots5203">Canal</a></li>
+
+<li class="menu-heading">Compras e Preços</li>
+<li><a href="/valor">Apikeys</a></li>
+
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div id="main-content">
+<div class="container-fluid">
+<div class="block-header">
+<div class="row">
+<div class="col-lg-5 col-md-8 col-sm-12">
+<h2><a href="javascript:void(0);" class="btn btn-xs btn-link btn-toggle-fullwidth"><i class="fa fa-arrow-left"></i></a> SILPHIETTE-API</h2>
+<ul class="breadcrumb">
+<li class="breadcrumb-item"><a href="/"><i class="icon-home"></i></a></li>
+<li class="breadcrumb-item active">Docs</li>
+</ul>
+</div>
+</div>
+
+<div class="row"> 
+
+<div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+<div class="card">
+<div class="card-body">
+<div class="row">
+<div class="col-9">
+<div class="d-flex align-items-center align-self-start">
+<h3 class="mb-0"><script type="text/javascript">
+var userip;
+</script>
+<script type="text/javascript" src="https://l2.io/ip.js?var=userip"></script>
+</h3><h3 class="mb-0"><script type="text/javascript">
+document.write(userip);
+</script></h3>
+</div>
+</div>
+<div class="col-3">
+<div class="icon icon-box-success ">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--eos-icons" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" data-icon="eos-icons:ip" style="color: #3eacff; font-size: 17px;"><path fill="currentColor" d="M4.26 12A8.243 8.243 0 0 1 4 10a8.243 8.243 0 0 1 .26-2h3.38a16.513 16.513 0 0 0-.14 2a16.514 16.514 0 0 0 .14 2h2.02a14.71 14.71 0 0 1-.16-2a14.581 14.581 0 0 1 .16-2h4.68a14.59 14.59 0 0 1 .16 2a14.72 14.72 0 0 1-.16 2h2.02a16.512 16.512 0 0 0 .14-2a16.511 16.511 0 0 0-.14-2h3.38a8.24 8.24 0 0 1 .26 2a8.24 8.24 0 0 1-.26 2h2.059A10 10 0 1 0 2.2 12Zm14.66-6h-2.95a15.65 15.65 0 0 0-1.38-3.56A8.03 8.03 0 0 1 18.92 6ZM12 2.04A14.086 14.086 0 0 1 13.91 6h-3.82A14.086 14.086 0 0 1 12 2.04Zm-2.59.4A15.648 15.648 0 0 0 8.03 6H5.08a7.987 7.987 0 0 1 4.33-3.56Zm3.339 15.055h2v1h-2z"></path><path fill="currentColor" d="M20.998 14H3.002A2.002 2.002 0 0 0 1 16.002v5.996A2.002 2.002 0 0 0 3.002 24h17.996A2.002 2.002 0 0 0 23 21.998v-5.996A2.002 2.002 0 0 0 20.998 14ZM9.251 22.005h-1.5v-6h1.5Zm6.998-3.51a1.473 1.473 0 0 1-1.5 1.5h-2v2h-1.5v-6h3.5a1.473 1.473 0 0 1 1.5 1.5Z"></path></svg>
+</div>
+</div>
+</div>
+<h6 class="text-muted font-weight-normal">Seu IP</h6>
+</div>
+</div>
+</div>
+
+<div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+<div class="card">
+<div class="card-body">
+<div class="row">
+<div class="col-9">
+<div class="d-flex align-items-center align-self-start">
+<h3 class="count font-weight-bold">ale1</h3>
+</div>
+</div>
+<div class="col-3">
+<div class="icon icon-box-success ">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--fa-solid" width="1.25em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 512" data-icon="fa-solid:users" style="color: #3eacff; font-size: 17px;"><path fill="currentColor" d="M96 224c35.3 0 64-28.7 64-64s-28.7-64-64-64s-64 28.7-64 64s28.7 64 64 64zm448 0c35.3 0 64-28.7 64-64s-28.7-64-64-64s-64 28.7-64 64s28.7 64 64 64zm32 32h-64c-17.6 0-33.5 7.1-45.1 18.6c40.3 22.1 68.9 62 75.1 109.4h66c17.7 0 32-14.3 32-32v-32c0-35.3-28.7-64-64-64zm-256 0c61.9 0 112-50.1 112-112S381.9 32 320 32S208 82.1 208 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C179.6 288 128 339.6 128 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zm-223.7-13.4C161.5 263.1 145.6 256 128 256H64c-35.3 0-64 28.7-64 64v32c0 17.7 14.3 32 32 32h65.9c6.3-47.4 34.9-87.3 75.2-109.4z"></path></svg>
+</div>
+</div>
+</div>
+<h6 class="text-muted font-weight-normal">Apikey Gratis</h6>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="row clearfix">
+<div class="col-lg-4 col-md-12">
+<div class="card">
+<div class="header">
+<h2>Noticias Do Site</h2>
+</div>
+<div class="body">
+<ul class="list-unstyled feeds_widget">
+
+<li>
+<div class="feeds-left">
+<i class="fa fa-info-circle"></i>
+</div>
+<div class="feeds-body">
+<h4 class="title">Design Atualizado <small class="float-right text-muted">01/12/22</small></h4>
+<small>Design Dos Docs Atualizado!</small>
+</div>
+</li>
+
+<li>
+<div class="feeds-left">
+<i class="fa fa-youtube-play"></i>
+</div>
+<div class="feeds-body">
+  <h4 class="title">Youtube Play V2 <small class="float-right text-muted">01/12/22</small></h4>
+  <small>Novas Apis De Play Adicionadas!</small>
+</div>
+</li>
+
+<li>
+<div class="feeds-left">
+<i class="fa fa-key"></i>
+</div>
+<div class="feeds-body">
+<h4 class="title text-warning">Apikey Gratis<small class="float-right text-muted">01/12/22</small></h4>
+<small>Apikey Gratis: ale1 Adicionada!</small>
+</div>
+</li>
+
+</ul>
+</div>
+</div>
+</div>
+
+
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script src="https://www.wrraptheme.com/templates/lucid/html/dark/assets/bundles/libscripts.bundle.js"></script>
+<script src="https://www.wrraptheme.com/templates/lucid/html/dark/assets/bundles/vendorscripts.bundle.js"></script>
+<script src="https://www.wrraptheme.com/templates/lucid/html/dark/assets/bundles/chartist.bundle.js"></script>
+<script src="https://www.wrraptheme.com/templates/lucid/html/dark/assets/bundles/knob.bundle.js"></script> 
+<script src="https://www.wrraptheme.com/templates/lucid/html/assets/vendor/toastr/toastr.js"></script>
+<script src="https://www.wrraptheme.com/templates/lucid/html/dark/assets/bundles/mainscripts.bundle.js"></script>
+<script src="./layouts/index.js"></script>
+
+<script>
+window.setTimeout("getvisit()", 1000);
+
+function getvisit() {
+  var xhr = new XMLHttpRequest();
+  xhr.open("GET", `https://api.countapi.xyz/hit/jgbots-rest-api.herokuapp.com/visits`);
+  xhr.responseType = "json";
+  xhr.onload = function() {
+  document.getElementById('visits').innerText = this.response.value
+}
+xhr.send();
+}
+</script>
+
+</body>
+</html>
