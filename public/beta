@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+<title>INICIO</title>
+<link rel="icon" type="image/x-icon" href="https://telegra.ph/file/cdced3b0bf62da4e2835e.jpg" />
+<link href="https://designreset.com/cork/html/layouts/vertical-dark-menu/css/light/loader.css" rel="stylesheet" type="text/css" />
+<link href="https://designreset.com/cork/html/layouts/vertical-dark-menu/css/dark/loader.css" rel="stylesheet" type="text/css" />
+<script src="https://designreset.com/cork/html/layouts/vertical-dark-menu/loader.js"></script>
+<script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+<link href="https://designreset.com/cork/html/src/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="https://designreset.com/cork/html/layouts/vertical-dark-menu/css/light/plugins.css" rel="stylesheet" type="text/css" />
+<link href="https://designreset.com/cork/html/src/assets/css/light/authentication/auth-cover.css" rel="stylesheet" type="text/css" />
+<link href="https://designreset.com/cork/html/layouts/vertical-dark-menu/css/dark/plugins.css" rel="stylesheet" type="text/css" />
+<link href="https://designreset.com/cork/html/src/assets/css/dark/authentication/auth-cover.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body class="form">
+
+<div id="load_screen"> <div class="loader"> <div class="loader-content">
+<div class="spinner-grow align-self-center"></div>
+</div></div></div>
+
+<div class="auth-container d-flex h-100">
+<div class="container mx-auto align-self-center">
+<div class="row">
+</div>
+<div class="col-xxl-4 col-xl-5 col-lg-5 col-md-8 col-12 d-flex flex-column align-self-center ms-lg-auto me-lg-0 mx-auto">
+<div class="card">
+<div class="card-body">
+<div class="row">
+<div class="col-md-12 mb-3">
+<div class="media mb-4">
+<div class="avatar avatar-lg me-3">
+<img alt="avatar" src="https://telegra.ph/file/cdced3b0bf62da4e2835e.jpg" class="rounded-circle">
+</div>
+<div class="media-body align-self-center">
+<p class="mb-0">Seja Bem Vindo(a) <br> Ao Rest De Api's Para Bots <br> [ Rest API BY: JerfinhoPro ]</p>
+</div>
+</div>
+</div>
+<div class="col-12">
+<div class="mb-4">
+<a href="/login" class="btn btn-secondary w-100">Iniciar</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script src="https://designreset.com/cork/html/src/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<script>(function(){var js = "window['__CF$cv$params']={r:'7362383e5e4aa6c6',m:'twbRqjgVVXOFaX1WoFVBI27dceqlDty0xs6ogJO3Zc4-1659730683-0-AduvQBrP1/1tN89Sf6nFk+LpjtPEn+U1fl5spWGNUDcYblvoQR7CBnzbNuSEALx/0hATwQb+RsrKg0y0lvioTvdf957vPCgAlccJt+aWbHBKwKZOGHvOR0iIhYbWtzJXbA==',s:[0xe19f69711f,0x7f2235550e],u:'/cdn-cgi/challenge-platform/h/g'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/h/g/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = '';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
+</html>

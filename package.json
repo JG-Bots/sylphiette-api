@@ -1,0 +1,33 @@
+{
+  "name": "base-api",
+  "version": "1.0.0",
+  "description": "Uma base de API para aplicações.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "body-parser": "^1.20.2",
+    "fs": "0.0.1-security",
+    "fs-extra": "10.0.1",
+    "path": "0.12.7",
+    "ejs": "^3.1.9",
+    "axios": "^1.5.0",
+    "cheerio": "^1.0.0-rc.12",
+    "node-fetch": "2.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "keywords": [
+    "api",
+    "express",
+    "nodejs"
+  ],
+  "author": "JG-Bots",
+  "license": "MIT"
+}

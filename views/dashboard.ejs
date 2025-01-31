@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<title>[+] Sylphiette - Rest Api's</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="description" content="Lucid Bootstrap 4.1.1 Admin Template">
+<meta name="author" content="WrapTheme, design by: ThemeMakker.com">
+<link rel="icon" href="https://telegra.ph/file/cdced3b0bf62da4e2835e.jpg">
+
+<link rel="stylesheet" href="https://www.wrraptheme.com/templates/lucid/html/assets/vendor/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.wrraptheme.com/templates/lucid/html/assets/vendor/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.wrraptheme.com/templates/lucid/html/assets/vendor/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css">
+<link rel="stylesheet" href="https://www.wrraptheme.com/templates/lucid/html/assets/vendor/chartist/css/chartist.min.css">
+<link rel="stylesheet" href="https://www.wrraptheme.com/templates/lucid/html/assets/vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.css">
+<link rel="stylesheet" href="https://www.wrraptheme.com/templates/lucid/html/assets/vendor/toastr/toastr.min.css">
+<link rel="stylesheet" href="https://www.wrraptheme.com/templates/lucid/html/dark/assets/css/main.css">
+<link rel="stylesheet" href="https://www.wrraptheme.com/templates/lucid/html/dark/assets/css/color_skins.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+<style>
+  span{
+    font-family: 'Lobster', cursive;
+  }
+</style>
+
+
+</head>
+<body class="theme-purple">
+
+<script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+
+<div class="page-loader-wrapper">
+<div class="loader">
+<div class="m-t-30"><img src="https://www.wrraptheme.com/templates/lucid/html/assets/images/logo-icon.svg" width="48" height="48" alt="Lucid"></div>
+<p>carregando...</p>
+</div>
+</div>
+
+<div id="wrapper">
+<nav class="navbar navbar-fixed-top">
+<div class="container-fluid">
+<div class="navbar-btn">
+<button type="button" class="btn-toggle-offcanvas"> <span class="iconify" data-icon="dashicons:menu" style="color: white;" data-width="25" data-height="25"></span></button>
+</div>
+<div class="navbar-brand">
+</div>
+<div class="navbar-right">
+
+<div id="navbar-menu">
+<ul class="nav navbar-nav">
+<li>
+<li>
+<a href="/logout" class="icon-menu"><i class="fa fa-sign-out"></i></a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</nav>
+<div id="left-sidebar" class="sidebar">
+<div class="sidebar-scroll">
+<div class="user-account">
+<img src="https://telegra.ph/file/6bde9943728a8c8244864.png" class="rounded-circle user-photo" alt="User Profile Picture">
+<div class="dropdown">
+<span>Seja Bem Vindo(a),</span>
+<a class="user-name" ><strong>
+<%= user.username %>
+</strong></a>
+</div>
+<hr>
+<ul class="row list-unstyled">
+<li class="col-4">
+<small>Limit Key</small>
+<h6><%= userDb.saldo %></h6>
+</li>
+<li class="col-4">
+<small>Reqs Key</small>
+<h6><%= saldoUsado %></h6>
+</li>
+</ul>
+</div>
+
+<ul class="nav nav-tabs">
+<li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#menu">Menu Api's</a></li>
+<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#setting"><i class="fa fa-cog"></i></a></li>
+<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#question"><i class="fa fa-info-circle"></i></a></li>
+</ul>
+
+<div class="tab-content p-l-0 p-r-0">
+<div class="tab-pane active" id="menu">
+<nav id="left-sidebar-nav" class="sidebar-nav">
+<ul id="main-menu" class="metismenu">
+
+<!-- ///////////////////////////////////// -->
+
+<li>
+<a href="#Tables" class="has-arrow"><i class="fa fa-search-plus"></i> <span>Pesquisas</span></a>
+<ul>
+
+<li><a href="pesquisas/pinterest?texto=Sonic&apikey=<%= apiKey %>">Pinterest</a></li>
+
+</ul>
+</li>
+
+<!-- ///////////////////////////////////// -->
+
+<li>
+<a href="#App" class="has-arrow"> <i class="fa  fa-picture-o"></i> <span>Canvas</span></a>
+<ul>
+
+<li><a href="canva/ping?texto=000.1&apikey=<%= apiKey %>">Ping</a> </li></a></li>
+
+</ul>
+</li>
+
+<!-- ///////////////////////////////////// -->
+
+<li>
+<a href="#Tables" class="has-arrow"><i class="fa fa-anchor"></i> <span>Tools</span></a>
+<ul>
+
+<li><a href="others/fazernick?texto=JerfinhoPro&apikey=<%= apiKey %>">FAZERNICK<span class="badge badge-warning float-right">v1</span></a></li>
+
+</ul>
+</li>
+
+<!-- ///////////////////////////////////// -->
+
+</ul>
+</nav>
+</div>
+
+<div class="tab-pane p-l-15 p-r-15" id="setting">
+<h6>Escolha o Tema!</h6>
+<ul class="choose-skin list-unstyled">
+<li data-theme="purple">
+<div class="purple"></div>
+<span>Roxo</span>
+</li>
+<li data-theme="blue" class="active">
+<div class="blue"></div>
+<span>Azul Claro</span>
+</li>
+<li data-theme="cyan">
+<div class="cyan"></div>
+<span>Azul Ciano</span>
+</li>
+<li data-theme="green">
+<div class="green"></div>
+<span>Verde</span>
+</li>
+<li data-theme="orange">
+<div class="orange"></div>
+<span>Laranja</span>
+</li>
+<li data-theme="blush">
+<div class="blush"></div>
+<span>Rosa</span>
+</li>
+</ul>
+<hr>
+</li>
+</ul>
+</div>
+
+<div class="tab-pane p-l-15 p-r-15" id="question">
+<ul class="list-unstyled question">
+
+<li class="menu-heading">Redes Sociais Do Dono</li>
+<li><a href="https://chat.whatsapp.com/DiMy1DlJIMELrPtdhqb3fb">Meu Grupo De Zap</a></li>
+<li><a href="https://youtube.com/@jg-bots5203">Canal</a></li>
+
+<li class="menu-heading">Compras e Preços</li>
+<li><a href="/valor">Apikeys</a></li>
+ 
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div id="main-content">
+<div class="container-fluid">
+<div class="block-header">
+<div class="row">
+<div class="col-lg-5 col-md-8 col-sm-12">
+<h2><a href="javascript:void(0);" class="btn btn-xs btn-link btn-toggle-fullwidth"><i class="fa fa-arrow-left"></i></a> DOCS - Silphiette - api</h2>
+<ul class="breadcrumb">
+<li class="breadcrumb-item"><a href="/"><i class="icon-home"></i></a></li>
+<li class="breadcrumb-item active">Docs</li>
+</ul>
+</div>
+</div>
+
+<div class="row"> 
+
+<div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+<div class="card">
+<div class="card-body">
+<div class="row">
+<div class="col-9">
+<div class="d-flex align-items-center align-self-start">
+<h3 class="mb-0"><script type="text/javascript">
+var userip;
+</script>
+<script type="text/javascript" src="https://l2.io/ip.js?var=userip"></script>
+</h3><h3 class="mb-0"><script type="text/javascript">
+document.write(userip);
+</script></h3>
+</div>
+</div>
+<div class="col-3">
+<div class="icon icon-box-success ">
+</div>
+</div>
+</div>
+<h6 class="text-muted font-weight-normal">Seu IP</h6>
+</div>
+</div>
+</div>
+
+<div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+<div class="card">
+<div class="card-body">
+<div class="row">
+<div class="col-9">
+<div class="d-flex align-items-center align-self-start">
+<h3 class="count font-weight-bold"><%= apiKey %></h3>
+</div>
+</div>
+<div class="col-3">
+<div class="icon icon-box-success ">
+</div>
+</div>
+</div>
+<h6 class="text-muted font-weight-normal">Sua Apikey</h6>
+</div>
+</div>
+</div>
+
+<div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+<div class="card">
+<div class="card-body">
+<div class="row">
+<div class="col-9">
+<div class="d-flex align-items-center align-self-start">
+<h3 class="count font-weight-bold"><%= quantidade %></h3>
+</div>
+</div>
+<div class="col-3">
+<div class="icon icon-box-success ">
+</div>
+</div>
+</div>
+<h6 class="text-muted font-weight-normal">Total de registrados</h6>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="row clearfix">
+<div class="col-lg-4 col-md-12">
+<div class="card">
+<div class="header">
+<h2>TOP 5 USERS EM SALDO:</h2>
+</div>
+<div class="body">
+<ul class="list-unstyled feeds_widget">
+
+<% topUsers.forEach(user => { %>
+<li>
+<div class="feeds-left">
+<i class="fa fa-info-circle"></i>
+</div>
+<div class="feeds-body">
+<h4 class="title text-warning">
+<%= user.username %>
+</h4>
+<small>
+Saldo: [ <%= user.saldo %> ]
+</small>
+</div>
+</li>
+<% }); %>
+
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="row clearfix">
+<div class="col-lg-4 col-md-12">
+<div class="card">
+<div class="header">
+<h2>Noticias Do Site</h2>
+</div>
+<div class="body">
+<ul class="list-unstyled feeds_widget">
+
+<li>
+<div class="feeds-left">
+<i class="fa fa-info-circle"></i>
+</div>
+<div class="feeds-body">
+<h4 class="title">Design Atualizado <small class="float-right text-muted">25/01/2025</small></h4>
+<small>Design Dos Docs Atualizado!</small>
+</div>
+</li>
+
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script src="https://www.wrraptheme.com/templates/lucid/html/dark/assets/bundles/libscripts.bundle.js"></script>
+<script src="https://www.wrraptheme.com/templates/lucid/html/dark/assets/bundles/vendorscripts.bundle.js"></script>
+<script src="https://www.wrraptheme.com/templates/lucid/html/dark/assets/bundles/chartist.bundle.js"></script>
+<script src="https://www.wrraptheme.com/templates/lucid/html/dark/assets/bundles/knob.bundle.js"></script> 
+<script src="https://www.wrraptheme.com/templates/lucid/html/assets/vendor/toastr/toastr.js"></script>
+<script src="https://www.wrraptheme.com/templates/lucid/html/dark/assets/bundles/mainscripts.bundle.js"></script>
+</body>
+</html>
